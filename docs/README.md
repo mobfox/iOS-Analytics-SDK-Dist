@@ -75,7 +75,7 @@ Mobfox is facilitating the transition to support this change for each of our dem
 In the meantime, developers who want to release apps that support iOS9, will need to disable ATS in order to ensure Mobfox continues to work as expected, and in iOS10 and later only disable ATS for Media and Web content.
 <br><br>
 To do so, developers should add the following to their **plist**:
-<br><br>
+<br>
 ```xml
 <key>NSAppTransportSecurity</key>
 <dict>
@@ -93,8 +93,14 @@ Developers can also edit the plist directly by adding NSAppTransportSecurity key
 NSAllowsArbitraryLoads, NSAllowsArbitraryLoadsForMedia, and NSAllowsArbitraryLoadsInWebContent
 set to true.
 <br><br>
-
-
+In the future, Mobfox will provide an additional parameter for requesting only secure ads. We will inform our publishers through the [Control Panel](https://account.mobfox.com/).
+<br><br>
+More information about this change can be found on Apple's [website](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/index.html#//apple_ref/doc/uid/TP40016240).
+<br><br>
+For further questions about iOS9 and ATS, please create a ticket at [MobFox](https://account.mobfox.com/www/cp/create_ticket.php).
+<br><br>
+**If your app already relies on NSAllowsArbitraryLoads for some http request/s please do not modify your plist**
+<br><br>
 
 
 ## Usage
