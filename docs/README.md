@@ -57,9 +57,10 @@ To do a manual installation:
 
     1. Download and unzip [MobFox-Analytics-SDK](https://github.com/mobfox/iOS-Analytics-SDK-Dist/releases/latest) or clone this repository<br>
     2. For integrating **static** framework, drag **MobFoxAnalyticsSDK.embeddedframework**<br>
-       from the Finder into your project
+       from the Finder into your project<br>
     3. For integrating **synamic** framework, drag **MobFoxAnalyticsSDKDynamic.embeddedframework**<br>
-       from the Finder into your project
+       from the Finder into your project<br>
+       (**Note:** MobFoxSDKCoreDynamic.framework must be under 'Embedded Binaries' and 'Linked Frameworks and Libraries')<br>
 
 
 
