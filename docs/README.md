@@ -105,44 +105,33 @@ For further questions about iOS9 and ATS, please create a ticket at [MobFox](htt
 
 ## Usage
 
+First add the following import:<br>
 
-### Initializing
-
-- In your '**Application**' java class, or in your main activity '**onCreate**' - call:
-
-```java
-   // init the SDK:
-   MFDMPManager.sharedInstance(context);
+```xml
+	#import <MobFoxAnalyticsSDK/MFDMPManager.h>
+```
+<br>
+**OR**
+<br>
+```xml
+	#import <MobFoxAnalyticsSDKDynamic/MFDMPManager.h>
+```
+<br><br>
+To initialize the SDK, and get it working, call:
+```xml
+	[[MFDmpManager sharedManager] init];
+```
+<br><br>
+To get the current state of the SDK, call:
+```xml
+	BOOL res = [MFDmpManager isDMPReportDisabled];
+```
+<br><br>
+To set the SDK state, call:
+```xml
+	[MFDmpManager setDMPReportDisabled:(BOOL)bDisabled];
 ```
 
-        This is all you need to do to start the SDK and have it working.
-    
-        Parameters:<br>
-        - **context** the Context for the application or activity class.
-
-
-### Methods
-
-- Query state of the SDK (if it's disabled). The SDK is enabled by default.
-
-```java 
-    boolean isDisabled = isDMPReportDisabled(Context context); 
-```
-
-        Parameters:<br>
-        - **context** the Context for the application or activity class.
-<br>
-<br>
-- Set the state of the SDK (disable or enable it).
-        
-```java
-    setDMPReportDisabled(Context context, boolean newVal);
-```
-
-        Parameters:<br>
-        - **context** the Context for the application or activity class.<br>
-        - **newVal** the new state required.<br>
-<br>
 <br>
 <br>
 ## Thank you for using MobFox Andoid-Analytics-SDK !
