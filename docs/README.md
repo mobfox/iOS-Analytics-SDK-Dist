@@ -116,12 +116,21 @@ or for dynamic framework:<br>
 ```objc
 	#import <MobFoxAnalyticsSDKDynamic/MFDMPManager.h>
 ```
+
+To initialize the SDK, and get it working, call:
+
 ```objc
 	[[MFDmpManager sharedManager] init];
 ```
+
+To get the current state of the SDK, call:
+
 ```objc
 	BOOL res = [MFDmpManager isDMPReportDisabled];
 ```
+
+To set the SDK state, call:
+
 ```objc
 	[MFDmpManager setDMPReportDisabled:(BOOL)bDisabled];
 ```
