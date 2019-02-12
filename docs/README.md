@@ -111,7 +111,7 @@ First add the following import:<br>
 	#import <MobFoxAnalyticsSDK/MFDMPManager.h>
 ```
 <br>
-**OR**
+- or -
 <br>
 ```objc
 	#import <MobFoxAnalyticsSDKDynamic/MFDMPManager.h>
