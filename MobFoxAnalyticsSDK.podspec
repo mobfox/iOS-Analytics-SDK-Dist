@@ -49,7 +49,7 @@ puts wd
   s.static_framework = true
   s.requires_arc = true
 
-  s.source_files = 'MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework/Headers/*.h'
+  # @@@ s.source_files = 'MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework/Headers/*.h'
   s.ios.libraries = 'z'
 
   # s.resource_bundles = {
@@ -61,7 +61,7 @@ puts wd
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' =>  'MobFoxAnalyticsSDK/**'  }
 
 
-   s.public_header_files = 'MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework/Headers/*.h'
+   # @@@ s.public_header_files = 'MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework/Headers/*.h'
    s.vendored_frameworks = 'MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework'
    s.preserve_paths = 'MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework'
   # s.ios.frameworks = 'CoreData', 'SystemConfiguration'
