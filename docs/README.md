@@ -12,8 +12,6 @@ For any problems or questions not covered by the instructions below, contact EMA
 
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
-    * [Gradle](#gradle)
-    * [Manifest](#manifest)
 * [Usage](#usage)
   * [Initializing the SDK](#initializing)
   * [Methods](#methods)
@@ -22,40 +20,26 @@ For any problems or questions not covered by the instructions below, contact EMA
 
 ## Prerequisites
 
-* The SDK supports Android OS 4.4.x (KitKat) and later.
+* The SDK supports **iOS 9.0 and later**.
 * You will need a [MobFox](https://mobfox.atlassian.net/wiki/spaces/PUMD/pages/354549848/Setup+MobFox+Account) account.
 
 ## Installation
 
-### Gradle
+### Before you start
 
-- In your app **build.gradle**, make sure you have **minSdkVersion 19** and **targetSdkVersion 28**.
+Set 'Always Embed Swift Standard Libraries' in your 'build settings' to Yes.
 
-- Under **dependencies** add
+### CocoaPods
 
-``` 
-   compile 'com.android.volley:volley:1.1.0'
-   
-   compile 'com.github.mobfox.Android-Analytics-SDK:MobFox-Android-Analytics-SDK:3.6.6'
-   
-```
+If you do not have Podfile yet:
 
-### Manifest
+    1. Close your Xcode project.
+    2. In terminal, go to your project location and type **pod init** to create Podfile.
+    3. Use **open -a Xcode Podfile** to edit Podfile.
+    4. Add to your Podfile:
 
-- Add the following permissions to your '**AndroidManifest.xml**' file:
-(yes we know - there are tons of them, but they are all required for
-the operation of BAZZ...)
-
-```xml
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
+```java
+   pod 'MobFoxAnalyticsSDK', '3.6.6'
 ```
 
 
