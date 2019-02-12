@@ -33,12 +33,12 @@ Set 'Always Embed Swift Standard Libraries' in your 'build settings' to Yes.
 
 If you do not have Podfile yet:
 
-    1. Close your Xcode project.
-    2. In terminal, go to your project location and type **pod init** to create Podfile.
-    3. Use **open -a Xcode Podfile** to edit Podfile.
-    5. Add to your Podfile:
+    1. Close your Xcode project.<br>
+    2. In terminal, go to your project location and type **pod init** to create Podfile.<br>
+    3. Use **open -a Xcode Podfile** to edit Podfile.<br>
+    5. Add to your Podfile:<br>
 
-```java
+```xml
    pod 'MobFoxAnalyticsSDK', '3.6.6'
 ```
 
