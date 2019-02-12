@@ -25,7 +25,7 @@ puts wd
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = "MobFox's iOS Analytics SDK"
+  s.description      = "MobFox's Analytics SDK for iOS"
 
   s.homepage         = "http://mobfox.com"
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
