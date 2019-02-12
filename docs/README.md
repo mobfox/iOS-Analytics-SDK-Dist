@@ -135,4 +135,4 @@ To set the SDK state, call:
 	[MFDmpManager setDMPReportDisabled:(BOOL)bDisabled];
 ```
 
-## Thank you for using MobFox Andoid-Analytics-SDK !
+## Thank you for using MobFox iOS-Analytics-SDK !
