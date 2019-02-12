@@ -33,14 +33,33 @@ Set 'Always Embed Swift Standard Libraries' in your 'build settings' to Yes.
 
 If you do not have Podfile yet:
 
-    1. Close your Xcode project.<br>
-    2. In terminal, go to your project location and type **pod init** to create Podfile.<br>
-    3. Use **open -a Xcode Podfile** to edit Podfile.<br>
-    5. Add to your Podfile:<br>
+    1. Close your Xcode project<br>
+    2. In terminal, go to your project location and type **pod init** to create Podfile<br>
+    3. Use **open -a Xcode Podfile** to edit Podfile<br>
+    4. Add to your Podfile:<br>
 
 ```xml
    pod 'MobFoxAnalyticsSDK', '3.6.6'
 ```
+
+       or for **dynamic framework** add:
+
+```xml
+   pod 'MobFoxAnalyticsSDKDynamic', '3.6.6'
+```
+
+    5. Save your pod file and type **pod install**<br>
+
+
+### Manual Installation
+
+To do a manual installation:
+
+    1. Download and unzip [MobFox-Analytics-SDK](https://github.com/mobfox/iOS-Analytics-SDK-Dist/releases/latest) or clone this repository<br>
+    2. For integrating **static** framework, drag **MobFoxAnalyticsSDK.embeddedframework** from the Finder into your project
+       For integrating **synamic** framework, drag **MobFoxAnalyticsSDKDynamic.embeddedframework** from the Finder into your project
+
+
 
 
 ## Usage
