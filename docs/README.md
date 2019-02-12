@@ -12,6 +12,9 @@ For any problems or questions not covered by the instructions below, contact EMA
 
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
+  * [CocoaPods](#cocoapods)
+  * [Manual Installation](#manual-installation)
+  * [ATS](#ats)
 * [Usage](#usage)
   * [Initializing the SDK](#initializing)
   * [Methods](#methods)
@@ -61,6 +64,35 @@ To do a manual installation:
     3. For integrating **dynamic** framework, drag **MobFoxAnalyticsSDKDynamic.embeddedframework**<br>
        from the Finder into your project<br>
        (**Note:** MobFoxSDKCoreDynamic.framework must be under 'Embedded Binaries' and 'Linked Frameworks and Libraries')<br>
+
+
+### ATS
+
+One of the changes in iOS9 is a default setting that requires apps to make network connections only over SSL. This is known as App Transport Security.
+<br><br>
+Mobfox is facilitating the transition to support this change for each of our demand partners to ensure they are compliant.
+<br><br>
+In the meantime, developers who want to release apps that support iOS9, will need to disable ATS in order to ensure Mobfox continues to work as expected, and in iOS10 and later only disable ATS for Media and Web content.
+<br><br>
+To do so, developers should add the following to their **plist**:
+<br><br>
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+<key>NSAllowsArbitraryLoads</key>
+<true/>
+<key>NSAllowsArbitraryLoadsForMedia</key>
+<true/>
+<key>NSAllowsArbitraryLoadsInWebContent</key>
+<true/>
+</dict>
+```
+
+Developers can also edit the plist directly by adding NSAppTransportSecurity key of dictionary type with the parameters:
+<br><br>
+NSAllowsArbitraryLoads, NSAllowsArbitraryLoadsForMedia, and NSAllowsArbitraryLoadsInWebContent
+set to true.
+<br><br>
 
 
 
