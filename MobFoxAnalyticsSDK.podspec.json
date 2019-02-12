@@ -16,14 +16,13 @@
     "tag": "3.6.6"
   },
   "preserve_paths": [
-    "MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework",
-    "MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework/Headers"
+    "MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework"
   ],
   "public_header_files": [
-    "MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework/Headers/*.h"
+    "MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework/Headers/MFDMPManager.h"
   ],
   "source_files": [
-    "MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework/Headers/*.h"
+    "MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework/Headers/*.*"
   ],
   "vendored_frameworks": [
     "MobFoxAnalyticsSDK.embeddedframework/MobFoxAnalyticsSDK.framework"
