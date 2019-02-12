@@ -110,28 +110,17 @@ First add the following import:<br>
 ```objc
 	#import <MobFoxAnalyticsSDK/MFDMPManager.h>
 ```
-<br>
-- or -
-<br>
 ```objc
 	#import <MobFoxAnalyticsSDKDynamic/MFDMPManager.h>
 ```
-<br><br>
-To initialize the SDK, and get it working, call:
 ```objc
 	[[MFDmpManager sharedManager] init];
 ```
-<br><br>
-To get the current state of the SDK, call:
 ```objc
 	BOOL res = [MFDmpManager isDMPReportDisabled];
 ```
-<br><br>
-To set the SDK state, call:
 ```objc
 	[MFDmpManager setDMPReportDisabled:(BOOL)bDisabled];
 ```
 
-<br>
-<br>
 ## Thank you for using MobFox Andoid-Analytics-SDK !
