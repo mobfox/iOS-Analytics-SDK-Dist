@@ -56,8 +56,10 @@ If you do not have Podfile yet:
 To do a manual installation:
 
     1. Download and unzip [MobFox-Analytics-SDK](https://github.com/mobfox/iOS-Analytics-SDK-Dist/releases/latest) or clone this repository<br>
-    2. For integrating **static** framework, drag **MobFoxAnalyticsSDK.embeddedframework** from the Finder into your project
-       For integrating **synamic** framework, drag **MobFoxAnalyticsSDKDynamic.embeddedframework** from the Finder into your project
+    2. For integrating **static** framework, drag **MobFoxAnalyticsSDK.embeddedframework**<br>
+       from the Finder into your project
+    3. For integrating **synamic** framework, drag **MobFoxAnalyticsSDKDynamic.embeddedframework**<br>
+       from the Finder into your project
 
 
 
