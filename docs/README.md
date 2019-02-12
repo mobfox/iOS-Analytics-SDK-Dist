@@ -107,28 +107,28 @@ For further questions about iOS9 and ATS, please create a ticket at [MobFox](htt
 
 First add the following import:<br>
 
-```xml
+```objc
 	#import <MobFoxAnalyticsSDK/MFDMPManager.h>
 ```
 <br>
 **OR**
 <br>
-```xml
+```objc
 	#import <MobFoxAnalyticsSDKDynamic/MFDMPManager.h>
 ```
 <br><br>
 To initialize the SDK, and get it working, call:
-```xml
+```objc
 	[[MFDmpManager sharedManager] init];
 ```
 <br><br>
 To get the current state of the SDK, call:
-```xml
+```objc
 	BOOL res = [MFDmpManager isDMPReportDisabled];
 ```
 <br><br>
 To set the SDK state, call:
-```xml
+```objc
 	[MFDmpManager setDMPReportDisabled:(BOOL)bDisabled];
 ```
 
