@@ -42,13 +42,13 @@ If you do not have Podfile yet:
     4. Add to your Podfile:<br>
 
 ```xml
-   pod 'MobFoxAnalyticsSDK', '3.6.6'
+   pod 'MobFoxAnalyticsSDK', '3.7.0'
 ```
 
        or for **dynamic framework** add:
 
 ```xml
-   pod 'MobFoxAnalyticsSDKDynamic', '3.6.6'
+   pod 'MobFoxAnalyticsSDKDynamic', '3.7.0'
 ```
 
     5. Save your pod file and type **pod install**<br>
@@ -108,31 +108,31 @@ For further questions about iOS9 and ATS, please create a ticket at [MobFox](htt
 First add the following import:<br>
 
 ```objc
-	#import <MobFoxAnalyticsSDK/MFDMPManager.h>
+	#import <MobFoxAnalyticsSDK/MFAnalyticsManager.h>
 ```
 
 or for dynamic framework:<br>
 
 ```objc
-	#import <MobFoxAnalyticsSDKDynamic/MFDMPManager.h>
+	#import <MobFoxAnalyticsSDKDynamic/MFAnalyticsManager.h>
 ```
 
 To initialize the SDK, and get it working, call:
 
 ```objc
-	[[MFDmpManager sharedManager] init];
+	[MFAnalyticsManager sharedManager];
 ```
 
 To get the current state of the SDK, call:
 
 ```objc
-	BOOL res = [MFDmpManager isDMPReportDisabled];
+	BOOL res = [MFAnalyticsManager isAnalyticesDisabled];
 ```
 
 To set the SDK state, call:
 
 ```objc
-	[MFDmpManager setDMPReportDisabled:(BOOL)bDisabled];
+	[MFAnalyticsManager setAnalyticsDisabled:(BOOL)bDisabled];
 ```
 
 ## Thank you for using MobFox iOS-Analytics-SDK !
