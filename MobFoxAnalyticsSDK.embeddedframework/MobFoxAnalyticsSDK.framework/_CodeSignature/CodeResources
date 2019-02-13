@@ -4,13 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/MFDMPManager.h</key>
+		<key>Headers/MFAnalyticsManager.h</key>
 		<data>
-		ztHhFKzFBLCjynh5y8+jJZrHCXE=
+		98olAJovArUDh4iEFyTljQHfK2I=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1Cx8m+AH6PvlAtjiN1dV2A48Qh4=
+		4uTSwrQFH5Nndm1Zy3fF4aglzzU=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -19,15 +19,15 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/MFDMPManager.h</key>
+		<key>Headers/MFAnalyticsManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ztHhFKzFBLCjynh5y8+jJZrHCXE=
+			98olAJovArUDh4iEFyTljQHfK2I=
 			</data>
 			<key>hash2</key>
 			<data>
-			MqPa0MEUE91ZqRdN0sICFclnlHST9/Q/rYjKDxjBMp4=
+			iqHmyYRJjgmeAJB7szclKljqJAf9aGd9HG1VLmO+3WI=
 			</data>
 		</dict>
 		<key>LICENSE</key>

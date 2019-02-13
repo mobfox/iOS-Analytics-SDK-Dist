@@ -1,6 +1,6 @@
 {
   "name": "MobFoxAnalyticsSDKDynamic",
-  "version": "3.6.6",
+  "version": "3.7.0",
   "homepage": "http://mobfox.com",
   "license": "MIT",
   "authors": {
@@ -13,13 +13,13 @@
   },
   "source": {
     "git": "https://github.com/mobfox/iOS-Analytics-SDK-Dist.git",
-    "tag": "3.6.6"
+    "tag": "3.7.0"
   },
   "preserve_paths": [
     "MobFoxAnalyticsSDKDynamic.embeddedframework/MobFoxAnalyticsSDKDynamic.framework"
   ],
   "public_header_files": [
-    "MobFoxAnalyticsSDKDynamic.embeddedframework/MobFoxAnalyticsSDKDynamic.framework/Headers/MFDMPManager.h"
+    "MobFoxAnalyticsSDKDynamic.embeddedframework/MobFoxAnalyticsSDKDynamic.framework/Headers/MFAnalyticsManager.h"
   ],
   "source_files": [
     "MobFoxAnalyticsSDKDynamic.embeddedframework/MobFoxAnalyticsSDKDynamic.framework/Headers/*.*"

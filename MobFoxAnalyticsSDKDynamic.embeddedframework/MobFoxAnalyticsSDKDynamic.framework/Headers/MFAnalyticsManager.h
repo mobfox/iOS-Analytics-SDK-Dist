@@ -1,5 +1,5 @@
 //
-// MFDMPManager.h
+// MFAnalyticsManager.h
 //  MobFoxSDKCore
 //
 //
@@ -7,35 +7,21 @@
 //  Copyright © 2017 Moshe. All rights reserved.
 //
 
-#ifndef MFDmpManagerSingletonClass_h
-#define MFDmpManagerSingletonClass_h
+#ifndef MFAnalyticsManagerSingletonClass_h
+#define MFAnalyticsManagerSingletonClass_h
 
 #ifndef NO_DMP  //#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
 
 #import <UIKit/UIKit.h>
 #import <foundation/Foundation.h>
 
-/* removed for now - ShSh
-@protocol MFDmpDelegate <NSObject>
-
-@optional
-
-- (void)MobFoxDMPReady;
-
-@end
-*/
-
-@interface MFDmpManager : NSObject {
+@interface MFAnalyticsManager : NSObject {
 
 }
 
-/* removed for now - ShSh
-@property (nonatomic, weak) id <MFDmpDelegate> delegate;
-*/
-
 + (id)sharedManager;
-+ (void)setDMPReportDisabled:(BOOL)enabled;
-+ (BOOL)isDMPReportDisabled;
++ (void)setAnalyticsDisabled:(BOOL)enabled;
++ (BOOL)isAnalyticsDisabled;
 
 /* removed for now - ShSh
 -(NSString *) getDMPMessage;
@@ -45,4 +31,4 @@
 
 #endif //#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@
 
-#endif /* MFDmpManagerSingletonClass_h */
+#endif /* MFAnalyticsManagerSingletonClass_h */
